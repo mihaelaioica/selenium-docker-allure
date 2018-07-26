@@ -14,6 +14,6 @@ RUN pip install pytest-dependency
 
 # Dokcer entry
 COPY blazedemo_app/docker-entry.sh /code
-ENTRYPOINT ["/docker-entry.sh"]
+ENTRYPOINT ["/code/docker-entry.sh"]
 
 CMD ["/bin/true"]
